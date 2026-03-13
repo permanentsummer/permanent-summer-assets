@@ -139,7 +139,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
         <a class="button" target="_blank" href="https://buy.stripe.com/cNi4gAc46dw59jeeXQcjS0G">Buy Now</a>
         <div class="product-specs">
           <button class="specs-toggle" onclick="toggleSpecs(this)">Details <span>&#9660;</span></button>
-          <div class="specs-body">
+          <div class="specs-body" style="display:none;margin-top:12px;">
             <div class="spec-row"><span class="spec-label">Weight</span><span>180 g/m&#178;</span></div>
             <div class="spec-row"><span class="spec-label">Material</span><span>100% cotton (most colours) &middot; some blends available</span></div>
             <div class="spec-row"><span class="spec-label">Fit</span><span>Regular cut, round neck</span></div>
@@ -175,7 +175,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
         <a class="button" target="_blank" href="https://buy.stripe.com/28E8wQ8RU77H672cPIcjS0H">Buy Now</a>
         <div class="product-specs">
           <button class="specs-toggle" onclick="toggleSpecs(this)">Details <span>&#9660;</span></button>
-          <div class="specs-body">
+          <div class="specs-body" style="display:none;margin-top:12px;">
             <div class="spec-row"><span class="spec-label">Weight</span><span>93 g</span></div>
             <div class="spec-row"><span class="spec-label">Material</span><span>100% brushed cotton, washed</span></div>
             <div class="spec-row"><span class="spec-label">Structure</span><span>6 panels, unstructured, pre-formed visor</span></div>
@@ -211,7 +211,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
         <a class="button" target="_blank" href="https://buy.stripe.com/cNi14ofgi3Vvdzu4jccjS0I">Buy Now</a>
         <div class="product-specs">
           <button class="specs-toggle" onclick="toggleSpecs(this)">Details <span>&#9660;</span></button>
-          <div class="specs-body">
+          <div class="specs-body" style="display:none;margin-top:12px;">
             <div class="spec-row"><span class="spec-label">Material</span><span>100% certified organic cotton corduroy</span></div>
             <div class="spec-row"><span class="spec-label">Sizes</span><span>S &middot; M &middot; L</span></div>
           </div>
@@ -292,7 +292,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
     <a class="social-link" href="https://facebook.com/permanentsummer" target="_blank" title="Facebook">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#2E2E2E" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
     </a>
-    <a class="social-link" href="mailto:christopher@permanentsummer.co" title="Email">
+    <a class="social-link" href="/cdn-cgi/l/email-protection#ff9c978d968c8b908f979a8dbf8f9a8d929e919a918b8c8a92929a8dd19c90" title="Email">
       <svg class="si" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#2E2E2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
     </a>
     <a class="social-link" href="https://wa.me/351924477353" target="_blank" title="WhatsApp">
@@ -306,7 +306,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
   <div style="font-size:12px;color:#aaa;line-height:1.9;">Permanent Summer Lda &nbsp;&middot;&nbsp; Casas Da Alcaria Lote 81, 8950-413 Altura, Portugal &nbsp;&middot;&nbsp; NIF: PT516416804</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleSpecs(btn) {
   var body = btn.parentElement.querySelector('.specs-body');
   if (body.style.display === 'block') {
@@ -343,12 +343,4 @@ function selectSize(btn, groupId) {
 function handleNewsletter(e) {
   e.preventDefault();
   var btn = e.target.querySelector('button');
-  var input = e.target.querySelector('input');
-  btn.textContent = 'Coupon sent!';
-  btn.style.background = '#4caf82';
-  input.disabled = true;
-  btn.disabled = true;
-}
-</script>
-</body>
-</html>
+  var input = e.target.querySelect
