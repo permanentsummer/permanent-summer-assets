@@ -21,7 +21,7 @@ h3{font-family:"Playfair Display",serif;letter-spacing:1.5px;}
 .button:hover{background:#c49060;transform:translateY(-1px);}
 .products{padding:90px 20px;max-width:1200px;margin:auto;}
 .products h2{text-align:center;margin-bottom:0;}
-.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:48px;}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:48px;align-items:start;}
 .product{background:white;padding:20px;border-radius:6px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;}
 .product h3{margin:0 0 14px;font-size:18px;}
 .product-slideshow{position:relative;width:100%;height:320px;overflow:hidden;border-radius:4px;background:#f9f6f0;}
@@ -276,7 +276,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
     <a class="social-link" href="https://facebook.com/permanentsummer" target="_blank" title="Facebook">
       <svg viewBox="0 0 24 24"><path fill="#2E2E2E" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
     </a>
-    <a class="social-link" href="mailto:christopher@permanentsummer.co" title="Email">
+    <a class="social-link" href="/cdn-cgi/l/email-protection#c7a4afb5aeb4b3a8b7afa2b587b7a2b5aaa6a9a2a9b3b4b2aaaaa2b5e9a4a8" title="Email">
       <svg viewBox="0 0 24 24" fill="none" stroke="#2E2E2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
     </a>
     <a class="social-link" href="https://wa.me/351924477353" target="_blank" title="WhatsApp">
@@ -290,7 +290,7 @@ footer{padding:36px 20px;text-align:center;font-size:14px;color:#888;border-top:
   <div style="font-size:12px;color:#aaa;line-height:1.9;">Permanent Summer Lda &nbsp;&middot;&nbsp; Casas Da Alcaria Lote 81, 8950-413 Altura, Portugal &nbsp;&middot;&nbsp; NIF: PT516416804</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 document.addEventListener('DOMContentLoaded', function() {
 
   // ── SPECS TOGGLE ──
@@ -346,13 +346,4 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       document.getElementById('nl-btn').textContent = 'Coupon sent!';
-      document.getElementById('nl-btn').style.background = '#4caf82';
-      document.getElementById('nl-email').disabled = true;
-      document.getElementById('nl-btn').disabled = true;
-    });
-  }
-
-});
-</script>
-</body>
-</html>
+      document.getElementById('nl-btn').style.background = '#4caf82'
