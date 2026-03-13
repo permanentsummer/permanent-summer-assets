@@ -426,8 +426,6 @@ h3 { font-family: "Playfair Display", serif; letter-spacing: 1.5px; }
   margin-top: 12px;
 }
 
-.specs-body.open { display: block; }
-
 .spec-row {
   display: flex;
   gap: 8px;
@@ -688,7 +686,7 @@ footer {
     <a class="social-link" href="https://facebook.com/permanentsummer" target="_blank" title="Facebook">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#2E2E2E" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
     </a>
-    <a class="social-link" href="mailto:christopher@permanentsummer.co" title="Email">
+    <a class="social-link" href="/cdn-cgi/l/email-protection#ed8e859f849e99829d85889fad9d889f808c838883999e988080889fc38e82" title="Email">
       <svg class="stroke-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#2E2E2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
     </a>
     <a class="social-link" href="https://wa.me/351924477353" target="_blank" title="WhatsApp">
@@ -705,12 +703,12 @@ footer {
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleSpecs(btn) {
-  const body = btn.nextElementSibling;
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open', !isOpen);
-  btn.classList.toggle('open', !isOpen);
+  var body = btn.parentElement.querySelector('.specs-body');
+  var isOpen = body.style.display === 'block';
+  body.style.display = isOpen ? 'none' : 'block';
+  btn.querySelector('.arrow').textContent = isOpen ? '▼' : '▲';
 }
 function getSlides(id) { return document.querySelectorAll('#' + id + ' .slide'); }
 function getDots(id) {
@@ -740,9 +738,4 @@ function moveSlide(id, dir) {
 }
 function selectSize(btn, groupId) {
   document.querySelectorAll('#' + groupId + ' .size-btn').forEach(b => b.classList.remove('selected'));
-  btn.classList.add('selected');
-}
-function handleNewsletter(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('button');
-  const input = e.target.querySelector('in
+  btn.classList.a
